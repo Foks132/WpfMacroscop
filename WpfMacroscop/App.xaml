@@ -1,0 +1,28 @@
+﻿<Application x:Class="WpfMacroscop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfMacroscop"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush Color="#adb5bd" x:Key="Secondary"/>
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="24"/>
+            <Setter Property="Width" Value="160"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="24"/>
+            <Setter Property="Width" Value="160"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style TargetType="Border" x:Key="ImageBorder">
+            <Setter Property="Width" Value="160"/>
+            <Setter Property="Height" Value="95"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="{StaticResource Secondary}"/>
+        </Style>
+        <Style TargetType="ProgressBar">
+            <Setter Property="Width" Value="320"/>
+            <Setter Property="Height" Value="24"/>
+        </Style>
+    </Application.Resources>
+</Application>
